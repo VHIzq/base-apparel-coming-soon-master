@@ -1,0 +1,97 @@
+@import url(reset.css);
+@import url(config.css);
+
+* {
+  font-size: 16px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.apparel {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  font-family: var(--ff-default);
+  gap: 3rem;
+  border-radius: 0.5rem;
+}
+
+.apparel .logo {
+  width: 100px;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+.apparel__text {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.apparel__text h1,
+span {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  letter-spacing: 5px;
+}
+
+.apparel__text span {
+  font-weight: var(--fw-light);
+  color: var(--clr-primary-400);
+}
+
+.apparel__text h1 {
+  color: var(--clr-neutral-400);
+}
+
+.apparel__text p {
+  color: var(--clr-primary-400);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.email {
+  width: 100%;
+}
+
+.email form input::placeholder {
+  font-size: 0.9rem;
+  color: var(--clr-primary-400);
+}
+
+.email__wrap {
+  display: flex;
+  align-items: center;
+  --padding-btn: .8rem;
+}
+
+.email__wrap input[type='email'],
+.email__wrap button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: var(--padding-btn);
+  border: none;
+}
+
+.email__wrap input[type='email'] {
+  width: 80%;
+  border-radius: 100vh;
+  padding: var(--padding-btn);
+  border: 1px solid var(--clr-primary-400);
+}
+
+.email__wrap button{
+  width: 20%;
+  border-radius: 100vh;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: var(--clr-primary-400);
+  position: relative;
+  right: 40px;
+}
